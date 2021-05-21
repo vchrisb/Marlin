@@ -69,7 +69,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(DIGA-Tech, ASWX1 v1.0)" // Who made the changes.        // DIGA-Tech:
+#define STRING_CONFIG_H_AUTHOR "(DIGA-Tech, Genius v1.0)" // Who made the changes.        // DIGA-Tech:
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)        // DIGA-Tech:
 
 /**
@@ -148,7 +148,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Artillery Sidewinder X1"      // DIGA-Tech:
+#define CUSTOM_MACHINE_NAME "Artillery Genius"      // DIGA-Tech:
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1037,10 +1037,10 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN                 // DIGA-Tech: enabled due to usage of probe on Z min endstop
+//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN                 // DIGA-Tech: enabled due to usage of probe on Z min endstop
 
 // Force the use of the probe for Z-axis homing
-//#define USE_PROBE_FOR_Z_HOMING                           // DIGA-Tech:
+#define USE_PROBE_FOR_Z_HOMING                           // DIGA-Tech:
 
 /**
  * Z_MIN_PROBE_PIN
@@ -1057,7 +1057,7 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-//#define Z_MIN_PROBE_PIN 19 // Pin 32 is the RAMPS default          // DIGA-Tech:
+#define Z_MIN_PROBE_PIN 19 // Pin 32 is the RAMPS default          // DIGA-Tech:
 
 /**
  * Probe Type
@@ -1186,7 +1186,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 33, -33, 0 }              // DIGA-Tech: probe offset
+#define NOZZLE_TO_PROBE_OFFSET { 33, -26, 0 }              // DIGA-Tech: probe offset
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1385,8 +1385,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 305                                     // DIGA-Tech:
-#define Y_BED_SIZE 305                                     // DIGA-Tech:
+#define X_BED_SIZE 220                                     // DIGA-Tech:
+#define Y_BED_SIZE 220                                     // DIGA-Tech:
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1394,7 +1394,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 400
+#define Z_MAX_POS 250
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
