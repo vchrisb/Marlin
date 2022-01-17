@@ -927,7 +927,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.121, 399.778, 445 }         // vchrisb
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 399.6, 430.41 }         // vchrisb
 
 /**
  * Default Max Feed Rate (mm/s)
